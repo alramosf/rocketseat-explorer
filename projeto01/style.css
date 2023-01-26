@@ -48,11 +48,12 @@ p, footer{
 
 footer{
     margin-top: 72px;
-    
+    margin-bottom: 33px;
 }
 
 footer a + a {
     margin-left: 28px;
+    
 }
 
 #line{
@@ -67,5 +68,6 @@ footer a + a {
 
 #balls{
     position: fixed;
-    top: ;
+    bottom: 0px;
+    right: 0px;
 }
