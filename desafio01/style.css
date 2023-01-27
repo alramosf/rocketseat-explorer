@@ -22,6 +22,7 @@ font-family: 'Open Sans', sans-serif;
 
 body{
     text-align: center;
+    margin: auto 199px;
 }
 
 #destiny{
@@ -33,11 +34,13 @@ body{
 img {
     margin-top: 64px;
     margin-bottom: 32px;
+    
 }
 
 h1{
     text-align: center;
     font-family: 'Dosis', sans-serif;
+    
     margin-bottom: 16px;
 }
 
