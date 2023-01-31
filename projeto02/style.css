@@ -9,9 +9,16 @@ font-family: 'Open Sans', sans-serif;*/
     font-family: 'Open Sans', sans-serif;
 }
 
+body{
+    background: linear-gradient(180deg, rgba(227, 255, 248, 0) 82.08%, rgba(227, 255, 248, 0.38) 100%);
+
+    min-height: 100vh;
+}
+
 .page{
     width: 1000px;
-    margin: 65px auto 0;
+    margin: 0 auto ;
+    padding-top: 65px;
 }
 
 nav {
@@ -34,8 +41,13 @@ a{
     color: #1F1534;
 }
 
+ul li a {
+    opacity: 0.5;
+}
+
 ul li a:hover{
     font-weight: bold;
+    opacity: 1;
 
 }
 
@@ -71,14 +83,31 @@ section p {
 }
 
 button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-transform: uppercase;
+    gap: 10px;
+
     
+    border: none;
+    padding:14px 32px 15px;
+    border-radius: 4px;
+    background-color: #69B99D;
+
+    color: #F9F9F9;
+
+    cursor: pointer;
+}
+
+button:hover{
+    background:#589e86 ;
 }
 
 footer{
     font-size: 14px;
     line-height: 28px;
-    
+
     text-align: center;
     
     margin-top: 80px;
@@ -86,4 +115,14 @@ footer{
 
 footer a {
     font-weight: bold;
+}
+
+footer a:hover{
+    color:#89c5cc;
+}
+
+#balls{
+    position: fixed;
+    bottom: 0;
+    right: 0;
 }
