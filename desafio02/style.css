@@ -1,4 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Open+Sans:wght@400;700&display=swap');
 
-body{
-    background-color: gray;
+
+/*
+font-family: 'JetBrains Mono', monospace;
+font-family: 'Open Sans', sans-serif;
+*/
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif
+}
+
+
+.page{
+    background-color: #2C2B3D;
+
+    width: 1280px;
+    height: 720px;
+    margin: auto;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 71px 99px 101px;
+    margin: auto ;
+}
+
+ul {
+    display: flex;
+    gap: 64px;
+
+    font-family: 'JetBrains Mono', monospace
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    margin: 101px 89px 157px 99px;
+
+}
+
+.text h1{
+    margin-bottom: 59px;
+}
+
+.text p {
+    width: 604
+    ;
 }
