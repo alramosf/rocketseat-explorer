@@ -36,10 +36,31 @@
                 <div class="input-wrapper">
                     <label for="event-category">Categoria</label>
                     <select id="event-category">
-                        <option value="Tipo do evento"><span>Tipo do evento</span></option>
+                        <option value="Tipo do evento" no-select><span>Tipo do evento</span></option>
+                        <option value="live">Ao Vivo</option>
+                        <option value="podcast">Podcast</option>
+                        <option value="mentorship">Mentoria</option>
                     </select>
                 </div>
             </div>
+            </fieldset>
+
+            <fieldset>
+                <div class="fieldset-wrapper">
+                        <legend>Privacidade</legend>
+                </div>
+                <div class="input-wrapper">
+                    <label for="event-email">E-mail do administrador <span>(digite um e-mail válido)</span></label>
+                    <input type="email" id="event-email">
+                </div>
+                <div class="input-wrapper">
+                    <label for="event-password">Senha de acesso para os participantes <span>(mínimo 8 caracteres)</span></label>
+                    <input type="password" id="event-password" minlength="8">
+                </div>
+                <div class="input-wrapper">
+                    <label for="event-private">Evento privado</label>
+                    <input type="checkbox" name="" id="event-private">
+                </div>
             </fieldset>
         </form>
         
