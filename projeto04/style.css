@@ -1,0 +1,109 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,400;0,800;1,700&display=swap');
+
+
+/*
+font-family: 'Epilogue', sans-serif;
+
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    font-size: 62.5%; /*10px*/ /*Colocar assim facilita os pxs para REM, basta trocar o nome e colocar um .(ponto) entre o primeiro e segundo numero*/
+}
+
+body{
+    background:#ece9fd ;
+    font-family: 'Epilogue', sans-serif;
+    padding: 6.0rem 2.3rem 6.6rem;
+    font-size: 1.6rem;
+}
+
+h1{
+
+    font-weight: 800;
+    font-size: 4.0rem;
+
+    line-height: 4.8rem;
+
+    color: #090039;
+    margin-bottom: 1.5rem;
+}
+
+main {
+    max-width: 33.0rem;
+    margin: 0 auto;
+}
+
+main p:first-child{
+
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 3.2rem;
+
+    letter-spacing: 3px;
+    text-transform: uppercase;
+
+
+
+    color: #7158EF;
+
+    margin-bottom: 1.7rem;
+
+}
+
+h1 + p{
+    line-height: 3.2rem;
+
+    color: rgba(10, 0, 57, 0.64);
+    
+    margin-bottom: 3.2rem;
+}
+
+a {
+    line-height: 3.2rem;
+    text-decoration: none;
+
+    color: #090039;
+
+}
+
+a:hover {
+    color: #7158EF;
+    font-weight: bold;
+
+}
+
+ul {
+    margin-top: 7.7rem;
+}
+
+ul li {
+    font-weight: 700;
+    font-size: 2.4rem;
+    line-height: 3.2rem;
+
+    color: #090039;
+
+    max-width: 25.7rem;
+
+    display: flex;
+    gap: 3.8rem;
+}
+
+ul li span {
+    font-weight: 800;
+    font-size: 7.2rem;
+    line-height: 8.0rem;
+    letter-spacing: -2px;
+
+
+    color: #090039;
+}
+
+
