@@ -23,9 +23,14 @@ const randomNumber = Math.round(Math.random() * 10)
 let xAttempts = 1;
 
 while(Number(result) != randomNumber){
+    if (result >= 11) {
+        alert(`O numero escolhido foi ${result} não é um numero entre 0 e 10, favor escolher novamente`)
+    }
     result = prompt("Erro, tente novamente:")
     xAttempts++
 }
+
+
 
 if (xAttempts > 1) {
     alert(`Parabéns! O Número que pensei foi ${randomNumber} você adivinhou o numero em ${xAttempts} tentativas`)
