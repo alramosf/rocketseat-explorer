@@ -27,4 +27,4 @@ while(Number(result) != randomNumber){
     xAttempts++
 }
 
-alert(`Parabéns! você adivinhou o numero em ${xAttempts} tentativas`)
+alert(`Parabéns! O Número que pensei foi ${randomNumber} você adivinhou o numero em ${xAttempts} tentativas`)
