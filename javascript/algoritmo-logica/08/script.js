@@ -11,44 +11,52 @@
 
 */
 
-let option = [];
-let pacienteName = [];
-let age = [];
-let weight = [];
-let height = [];
+const patients = [
+    {
+        name: "Luiz",
+        age: 20,
+        weight: 100,
+        height: 190
+    },
+    {
+        name: "Alexandre",
+        age: 28,
+        weight: 113,
+        height: 177
+    },
+    {
+        name: "Carlos",
+        age: 42,
+        weight: 120,
+        height: 185,
+    },
+]
 
-while (option != 3) {
-    option = Number(prompt(`
-    Olá ! Digite o número da opção desejada!
-    1 - Cadastrar um novo paciente
-    2 - Ver lista de pacientes
-    3 - Sair do programa
-    `))
+const patientsNames = []
+const patientsAge = []
+const pacientsWeight = []
+const pacientsHeight = []
 
-    switch(option) {
-        case 1:
-            // sequencia aqui
-            let pacienteName = prompt('Nome do paciente');
-            pacienteName.push(pacienteName); // adiciona o objeto 
-            let age = prompt('Idade do paciente');
-            age.push(age); // adi
-            let weight = prompt('Peso do paciente em kg');
-            weight.push(weight);
-            let height = prompt('Altura do paciente');
-            height.push(height);
-            break;
-        case 2:
-            if(pacienteName.length == 0){
-                alert('Não existem pacientes cadastrados')
-            } else {
-                alert(pacienteName)
-            }
-            break;
-        case 3:
-            alert('Tchau!')
-            break;
-        default:
-            alert('Opção inválida, tente novamente!')
 
-    }
+
+for (let patient of patients){
+    patientsNames.push(patient.name)
+
 }
+for (let patient of patients){
+    patientsAge.push(patient.age)
+
+}
+
+for (let patient of patients){
+    pacientsWeight.push(patient.weight)
+
+}
+
+for (let patient of patients){
+    pacientsHeight.push(patient.height)
+
+}
+
+
+alert(`O paciente ${patientsNames[0]} de ${patientsAge[0]} anos com ${pacientsWeight[0]} kilos e tem ${pacientsHeight[0]} de altura`)
