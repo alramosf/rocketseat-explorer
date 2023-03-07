@@ -71,6 +71,21 @@ const students = [
     }
 ]
 
-function media(){
-    
+function media(firstGrade,secondGrade, thirdGrade ){
+    return ((firstGrade + secondGrade + thirdGrade) / 3).toFixed(1)
 }
+
+const studentGrade = (students) => {
+
+    if(media(students.firstGrade, students.secondGrade, students.thirdGrade) >= 7){
+        return `Parabens! ${students.name} sua nota foi de: ${media(students.firstGrade, students.secondGrade, students.thirdGrade)} `
+    } else {
+        return `Que pena! ${students.name} sua nota foi de ${media(students.firstGrade, students.secondGrade, students.thirdGrade)} estude mais!  `
+    }
+
+}
+for (let studant of students){
+    let mediaMessage = studentGrade(studant)
+    alert(mediaMessage)
+}
+
