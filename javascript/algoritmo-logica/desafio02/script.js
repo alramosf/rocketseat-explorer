@@ -70,3 +70,7 @@ const students = [
         thirdGrade:6 ,
     }
 ]
+
+function media(){
+    
+}
