@@ -26,7 +26,7 @@ function handleTryClick(event) {
 
         document
         .querySelector(".screen3 h2")
-        .innerText = `O numero informado não está entre 0 e 10`
+        .innerText = `O numero selecionado foi ${inputNumber.value} não está entre 0 e 10`
     }
     inputNumber.value = ""
     xAttempts++
