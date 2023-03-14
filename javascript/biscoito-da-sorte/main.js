@@ -4,31 +4,6 @@ const openedCookie = document.querySelector(".openedCookie")
 
 const btnAnotherCookie = document.querySelector(".btnAnotherCookie")
 
-
-/* Eventos */
-
-btnAnotherCookie.addEventListener('click', toggleScreen, )
-closedCookie.addEventListener('click', toggleScreen, )
-
-/* Funções */
-
-
-function toggleScreen(event) {
-    event.preventDefault() 
-    closedCookie.classList.toggle("hide")
-    openedCookie.classList.toggle("hide")
-
-    document
-    .querySelector(".openedCookie p")
-    .innerText = `${mostrarFraseAleatoria()}`
-
-}
-
-
-
-
-
-
 const frases = [
     "A persistência é o caminho do êxito.",
     "A sabedoria é a única riqueza que os tiranos não podem expropriar.",
@@ -48,11 +23,28 @@ const frases = [
     "O conhecimento é poder.",
 ];
 
+/* Eventos */
+btnAnotherCookie.addEventListener('click', toggleScreen, )
+closedCookie.addEventListener('click', toggleScreen, )
+
+/* Funções */
+function toggleScreen(event) {
+    event.preventDefault() 
+    closedCookie.classList.toggle("hide")
+    openedCookie.classList.toggle("hide")
+
+    document
+    .querySelector(".openedCookie p")
+    .innerText = `${mostrarFraseAleatoria()}`
+
+}
 function mostrarFraseAleatoria() {
     const indiceAleatorio = Math.floor(Math.random() * frases.length);
     const frase = frases[indiceAleatorio];
     return frase
-
 }
-
   // Exibe uma frase aleatória quando o botão é clicado
+
+
+
+
