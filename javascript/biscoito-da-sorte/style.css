@@ -19,13 +19,10 @@ font-family: 'Montserrat', sans-serif;
     font-size: 62.5%;
 }
 
-#hide{
+
+.hide{
     display: none;
 }
-
-/* .hide {
-    display: none;
-} */
 
 body {
     background: linear-gradient(45deg, #190361 0%, #BB00FF 100%);
@@ -46,8 +43,6 @@ body {
 
     color: #34355B;
 
-    display: flex;
-    flex-direction: column;
 
     align-items: center;
 
@@ -84,8 +79,7 @@ body {
 /* Opened cookie */
 
 .openedCookie {
-    display: flex;
-    flex-direction: column;
+    text-align: center;
     align-items: center;
     padding: 4.8rem 6.4rem;
     gap: 1rem;
@@ -120,8 +114,9 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 10px;
-    gap: 10px;
+    margin-top: 1.4rem;
+    padding: 1rem;
+    gap: 1rem;
 
     background: #E4EDF1;
     box-shadow: 2px 2px 2px rgba(85, 85, 85, 0.5);
@@ -180,4 +175,51 @@ body {
     }
   }
   
-  /* Aplica a animação à imagem */
+
+.balao-chat {
+  transform: translateX(-50%);
+  animation: subir-balao 0.5s ease-out forwards, expandir-balao 0.3s ease-out 0.5s forwards;
+  opacity: 0;
+  transform-origin: bottom center;
+}
+
+@keyframes subir-balao {
+  from {
+    bottom: -10rem;
+  }
+  to {
+    bottom: 0;
+  }
+}
+
+@keyframes expandir-balao {
+  from {
+    opacity: 0;
+    transform: scale(0.2);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+
+/* Background animado */
+
+body {
+  background: linear-gradient(45deg, #190361 0%, #BB00FF 100%);
+  background-size: 200% 200%;
+  animation: gradient 10s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
