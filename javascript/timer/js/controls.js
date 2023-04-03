@@ -3,7 +3,7 @@ export function Controls({
     buttonPlay,
     buttonPause,
     buttonSet,
-    buttonStop,
+    buttonStop
 
 }) {
 
@@ -36,6 +36,7 @@ export function Controls({
         play,
         pause,
         getMinutes,
+        
     }
 }
 
