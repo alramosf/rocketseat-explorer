@@ -1,3 +1,5 @@
+const AppError = require("../utils/AppError")
+
 class UsersController {
     /*
     * Index - GET para listar vários registros.
@@ -10,9 +12,12 @@ class UsersController {
     create(request, response){ 
         const { name, email, password} = request.body;
 
+        if(!name){
+            throw new AppError("Name is required",401);
+        }
+
         response.json({ name, email, password });
-}
-    
+    } 
 }
 
 module.exports = UsersController;
