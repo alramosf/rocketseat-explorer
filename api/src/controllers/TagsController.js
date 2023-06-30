@@ -3,7 +3,7 @@ const knex = require("../database/knex");
 class TagsController {
 
     async index(request, response){
-        const user_id = request.params;
+        const {user_id} = request.params;
 
         console.log(user_id)
 
